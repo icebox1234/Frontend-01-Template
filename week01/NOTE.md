@@ -7,9 +7,10 @@
 这周在winter老师帮助我们进行了前端知识的分类，帮助我们重新建立前端知识的知识体系。在这个知识体系中，前端分为4大类：JS、CSS、HTML以及由此衍生出来的诸多API。同时，winter老师还教给我们中重要的知识整体办法：回溯法和整理法，其中整理法有助于建立知识体系的完备性，而追溯发则有著我验证知识的准确性。在这个过程中，winter老师还介绍了一些前端资料的权威数据源。  
 
 ## 3、参考资料
-1、[w3c](https://www.w3.org/)  
 
-2. [whatwg](https://whatwg.org/)  
+1、[w3c](https://www.w3.org/)
 
-3. [MDN](https://developer.mozilla.org/en-US/docs/Web)  
+2. [whatwg](https://whatwg.org/)
+
+3. [MDN](https://developer.mozilla.org/en-US/docs/Web)
 
