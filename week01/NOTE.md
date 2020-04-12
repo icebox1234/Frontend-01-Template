@@ -8,7 +8,7 @@
 
 ## 3、参考资料
 
-1、[w3c](https://www.w3.org/)
+ 1、[w3c](https://www.w3.org/)
 
 2. [whatwg](https://whatwg.org/)
 
