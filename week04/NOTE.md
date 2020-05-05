@@ -4,7 +4,7 @@
 - 事件循环不属于JavaScript引擎实现的东西，而是由浏览器或node js宿主环境实现的
 - script标签、UI交互、setTimeout、setInterval都会创建宏任务
 - 一个宏任务只存在一个微任务队列，微任务根据入队时间顺序执行
-- Promise的then方法以及async函数里的await会将一个微任务入队，微任务列表里的微任务按入队顺序执行
+- Promise的then方法以及async函数里的await会将一个微任务入队
 ## 宏任务&微任务执行顺序 实验代码
 ### 代码
 ```js
