@@ -67,8 +67,3 @@ function compoundSelectorMatch(selector, element) {
     }
     return true;
 }
-let res = compoundSelectorMatch('div#container.test.asd[title="123"][data-test="456"]', document.body.querySelector('div#container.test.asd[title="123"][data-test="456"]'));
-// console.log(res);
-// let tes4324 = document.body.querySelector('div#container.test.asd[title^="123"][data-test|="456"]')
-// console.log(tes4324)
-
