@@ -1,0 +1,1 @@
+/* Native access to MacOS FSEvents in Node.js */
