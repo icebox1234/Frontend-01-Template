@@ -1,21 +1,16 @@
 const http = require('http');
 const querystring = require('querystring');
-
-const postData = querystring.stringify(
-    {
-        content: 'hello wrold yahaha 123456'
-    }
-)
+const fs = require('fs');
+const archiver = require('archiver');
 
 
 const options = {
     host: 'localhost',
     port: 8081,
-    path: '/?filename=x.html',
+    path: `/?filename=package.zip`,
     method: 'POST',
     headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Content-Length': Buffer.byteLength(postData),
     }
 }
 
@@ -35,6 +30,14 @@ req.on('error', (e) => {
     console.error(`problem with request: ${e.message}`);
 });
 
-// Write data to request body
-req.write(postData);
-req.end();
+
+let packname = './package';
+const archive = archiver('zip', {
+    zlib: { level: 9 }
+})
+archive.directory(packname, false);
+archive.pipe(req);
+archive.on('finish', () => {
+    req.end();
+});
+archive.finalize();
